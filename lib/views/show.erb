@@ -6,14 +6,14 @@
   <h1>Voici la page du potin n°<%= params['id'] %> </h1><br/>
   
     <p>
-    <h1>Voici la page du potin</h1> <%= Gossip.find(params['id']).author %><br/>
-    <h1>Voici le potin</h1><%= Gossip.find(params['id']).content %><br/>
+    <h2>Voici l auteur du potin: </h2> <%= Gossip.find(params['id']).author %><br/>
+    <h2>Voici le potin: </h2><%= Gossip.find(params['id']).content %><br/>
     
     </p>
 
  <a href= "/gossips/<%= params['id'] %>/edit/" >Cliques Ici pour editer le potin</a><br/>
 
-Lien pour revenir à la page des potins
+Lien pour revenir à la page d'index des potins
 <a href= "http://localhost:4567/" >Accueil</a>
 
 

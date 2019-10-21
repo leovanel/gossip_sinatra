@@ -11,7 +11,7 @@
   </p>
 
   <p>Edite ton potin via le formulaire ci-dessous</p>
-    <form action='/gossips/new/' method='POST'>
+    <form action='/gossips/<%= params['id'] %>/edit/' method='POST'>
       Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/>
       Balance ton potin : <input type='text' name='gossip_content'/><br/>
       <input type='submit'/>
