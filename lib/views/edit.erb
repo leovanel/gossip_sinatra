@@ -1,0 +1,26 @@
+<head>
+<title>Editeur de potin</title>
+</head>
+<body>
+<h1>Voici la page du potin n°<%= params['id'] %> </h1><br/>
+
+  <p>
+  <h1>Voici la page du potin</h1> <%= Gossip.find(params['id']).author %><br/>
+  <h1>Voici le potin</h1><%= Gossip.find(params['id']).content %><br/>
+  
+  </p>
+
+  <p>Edite ton potin via le formulaire ci-dessous</p>
+    <form action='/gossips/new/' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+
+
+Lien pour revenir à la page des potins
+<a href= "http://localhost:4567/" >Accueil</a>
+</body>
+
+
+  
